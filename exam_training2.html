@@ -7,7 +7,6 @@
             body{
                 padding-top: 70px;
                 margin: 0px;
-                text-align: center;
             }
             #navigation{
                 background-color: black;
@@ -21,9 +20,9 @@
             .navi_text li { 
                 float: left;
                 list-style: none;
-                margin: 0 120px;
                 line-height: 35px;
                 text-align: center;
+                width: 20%;
             }
             .navi_text a {
                 color: white;
@@ -36,10 +35,29 @@
                 color:orangered;
             }
             .space{
-                height:70px;
+                height:80px;
             }
             #box1{
                 position: center;
+            }
+            .link1{
+                text-decoration: none;
+                color: black;
+            }
+            .font_1{
+                font-size: 16px;
+                margin: 30px;
+            }
+            .font_2{
+                font-size: 12px;
+                margin: 30px;
+                color: gray;
+            }
+            .align_1{
+                text-align: center;
+            }
+            #image_1{
+                margin-bottom: 30px;
             }
         </style>
     </head>
@@ -57,45 +75,50 @@
         </header>
         <img id="target1" width="100%" src="./images/GIRIBOY-1.jpg"/>
 
-        <div class="space"></div>
-        <h2 id="target2">Info</h2>
-        <p><table id="box1" summary="GIRIBOY" margin="50" align="left">
-            <caption>GIRIBOY</caption>
+        <div class="space" id="target2"></div>
+        <h2 class="align_1">Info</h2>
+        <p><table id="box1" summary="GIRIBOY" margin="50" align="center">
+            <caption class="font_1">GIRIBOY</caption>
+            <tr>
+                <td colspan="2" align="center">
+                <img width="300px" id="image_1"src="./images/GRBOY1.jpg"/> 
+                </td>
+            </tr>
+
             <tr>
                 <th scope="row">본명</th>
                 <td>홍시영</td>
             </tr>
             <tr>
-                <th cope="row">나이</th>
+                <th scope="row">나이</th>
                 <td>1991년 1월 24일 (28세)</td>
             </tr>
             <tr>
-                <th cope="row">출생지</th>
+                <th scope="row">출생지</th>
                 <td>서울특별시 도봉구 창동</td>
             </tr>
             <tr>
-                <th cope="row">데뷔</th>
+                <th scope="row">데뷔</th>
                 <td>2011년 디지털 싱글 You Look So Good To Me</td>
             </tr>
             <tr>
-                <th cope="row">소속</th>
+                <th scope="row">소속</th>
                 <td>저스트 뮤직 (부사장), WEDAPLUGG (공동대표), I4P (대표)</td>
             </tr>
             <tr>
-                <th cope="row">최근음원</th>
+                <th scope="row">최근음원</th>
                 <td>호랑이소굴, 슈퍼버스데이, 갑분기, 100년제전문대학</td>
             </tr>
             <tr>
-                <th cope="row">최근활동</th>
+                <th scope="row">최근활동</th>
                 <td>쇼미더머니, 고등래퍼, 스카페스티벌, 오프루트페스트</td>
             </tr>
         </table>
-        <img width="500px" src="./images/GRBOY1.jpg"/>
-        </p>
+
         <hr/>
 
-        <div class="space"></div> 
-        <h2 id="target3">Album</h2>
+        <div class="space" id="target3"></div> 
+        <h2 class="align_1">Album</h2>
         <p><table id="table1" width="100%" summary="Album">
         <thead>
             <tr height="10px">
@@ -128,7 +151,7 @@
                 <a href="./media/crowd-cheering.mp3" target="_blank"> <img src="./images/album-7.jpg" width="200"/> </a>
             </td>
             </tr>
-            <tr>
+            <tr class="align_1">
             <td><h4>호랑이소굴</h4></td>
             <td><h4>교통정리</h4></td>
             <td><h4>갑분기</h4></td>
@@ -137,7 +160,7 @@
             <td><h4>땡큐</h4></td>
             <td><h4>100년제전문대학</h4></td>
             </tr>
-            <tr>
+            <tr class="align_1">
                 <td>2019.10.13 <br/> 싱글앨범 </td>
                 <td>2019.05.21 <br/> 싱글앨범</td>   
                 <td>2019.08.02 <br/> EP앨범</td>
@@ -147,62 +170,82 @@
                 <td>2019.06.10 <br/> 정규앨범</td>
             </tr> 
         </tbody>
-        </table>
-        </p>
+        </table></p>
+
         <hr/>    
 
-        <div class="space"></div> 
-        <h2 id="target4">Media</h2>
+        <div class="space" id="target4"></div> 
+        <h2 class="align_1">Media</h2>
         <p>미디어미디어내용
         </p>
         <hr/>
-        <div class="space"></div> 
-        <h2 id="target5">News</h2>
-        <table align="center">
+        <div class="space" id="target5"></div> 
+        <h2 class="align_1">News</h2>
+        <p><table align="center">
             <tr>
                 <td>
-                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank"></a>
-                <img src="./images/album-2.jpg" width="100px"/>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" >
+                <img src="./images/album-2.jpg" width="100px"/></a>
                 </td>
                 <td>
-                헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격 </a>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" class="link1"><h3 class="font_1">헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격</h3>
+                <h5 class="font_2">가을 감성 고스란히 담았다</h5></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <img src="./images/album-2.jpg" width="100px"/>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" >
+                <img src="./images/album-2.jpg" width="100px"/></a>
                 </td>
                 <td>
-                헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격 
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" class="link1"><h3 class="font_1">헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격</h3>
+                <h5 class="font_2">가을 감성 고스란히 담았다</h5></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <img src="./images/album-2.jpg" width="100px"/>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" >
+                <img src="./images/album-2.jpg" width="100px"/></a>
                 </td>
                 <td>
-                헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격 
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" class="link1"><h3 class="font_1">헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격</h3>
+                <h5 class="font_2">가을 감성 고스란히 담았다</h5></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <img src="./images/album-2.jpg" width="100px"/>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" >
+                <img src="./images/album-2.jpg" width="100px"/></a>
                 </td>
                 <td>
-                헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격 
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" class="link1"><h3 class="font_1">헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격</h3>
+                <h5 class="font_2">가을 감성 고스란히 담았다</h5></a>
                 </td>
             </tr>
             <tr>
                 <td>
-                <img src="./images/album-2.jpg" width="100px"/>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" >
+                <img src="./images/album-2.jpg" width="100px"/></a>
                 </td>
                 <td>
-                헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격 
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" class="link1"><h3 class="font_1">헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격</h3>
+                <h5 class="font_2">가을 감성 고스란히 담았다</h5></a>
                 </td>
             </tr>
+            <tr>
+                <td>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" >
+                <img src="./images/album-2.jpg" width="100px"/></a>
+                </td>
+                <td>
+                <a href="http://www.newstomato.com/ReadNews.aspx?no=925755" target="_blank" class="link1"><h3 class="font_1">헤이즈, 미니 5집 ‘만추’ 발매…크러쉬·기리보이·콜드 지원사격</h3>
+                <h5 class="font_2">가을 감성 고스란히 담았다</h5></a>
+                </td>
+            </tr>
+
         </table>
         
-        <p>미디어미디어 내용
+        
         </p>
         <hr/>
     </body>
