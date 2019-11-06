@@ -16,6 +16,9 @@
                 border-right: solid 1px gray;
                 /* 경계선: 실선 1px두께 회색 */
             }
+            header{
+                padding: 10px 50px;
+            }
             header>ul>li:nth-child(5){
                 border: none; /*5번째 contect us의 선을 없앰*/
             }
@@ -52,6 +55,7 @@
             }
             nav{
                 background-color:#eee;
+                padding: 10px 50px;
             }
             #content>div:nth-child(1){
                 background-color: #98f;
@@ -83,6 +87,48 @@
                 width: 1020px;
                 margin-left: auto; /*가변값*/
                 margin-right: auto; /*가변값*/
+                padding: 50px 0px ;
+            }
+            footer{
+                background-color: #333;
+                color: #ccc;
+                padding: 10px 50px;
+            }
+            footer>div>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; /*상하좌우*/
+                border-right: solid 2px gray; 
+            }
+            footer>div>ul>li:nth-child(6){
+                border: none;
+            }
+            footer>div>ul{
+                padding: 0px;
+            }
+            footer>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer>ul{
+                padding:0px
+            }
+            #footer_left{
+                float: left;
+            }
+            #footer_right{
+                float: right;
+            }
+            #wrap{
+                /*width: 1200px;*/
+                min-width: 1100px; /*최소넓이*/
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            body{
+                margin: 0px;
             }
         </style>
     </head>
@@ -240,7 +286,35 @@
                     </section>
                 </div>
             </div>
-            <footer>footer</footer>
+            <footer>
+                <div id="footer_left">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                    <div class="clear"></div>
+                </ul>
+                <div>ⓒ 2013 BlueBox. All Right Reserved.</div>
+                <div>the loges in the design are the property 
+                     of their respective owners/copyright 
+                     holders.
+                </div>
+            </div>
+            <ul id="footer_right">
+                <li><img src="images/layout1_footer_icon1.png"/></li>
+                <li><img src="images/layout1_footer_icon2.png"/></li>
+                <li><img src="images/layout1_footer_icon3.png"/></li>
+                <li><img src="images/layout1_footer_icon4.png"/></li>
+                <li><img src="images/layout1_footer_icon5.png"/></li>
+                <li><img src="images/layout1_footer_icon6.png"/></li>
+                <div class="clear"></div>
+            </ul>
+            <div class="clear"></div>
+            </div>
+            </footer>
         </div>
     </body>
 </html>
