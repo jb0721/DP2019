@@ -1,24 +1,297 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-    <head> 
-        <title>콘텐츠 프로그래밍 사이트</title> 
-        <meta charset="utf-8" />
-        <!--utf-8, euc-kr -->
-        <meta name="author" content="서정빈" />
-        <meta name="keywords" content="계원, 콘텐츠프로그래밍, 디지털미디어" />
+    <head>
+        <title>index</title>
+        <meta charset="utf-8"/>
+        <style>
+        body{
+            background-color: black;
+            
+        }
+        .short_line{
+            border: solid 1px gray;
+            width: 30px;
+            margin: 10px;
+        }
+        header ul{
+            padding: 0px;
+        }
+        header li{
+            float:left;
+            list-style: none;
+            padding: 0px 20px 0px 0px ; /*상 우 하 좌 순서로 진행*/
+        
+        }
+        .clear{
+            clear: both;
+            height: 0px;
+            overflow: hidden;
+        }
+        .category{
+            background-color: black;
+            color:white;
+            display: inline-block;
+            padding: 2px 5px 5px 5px;
+            position: static; /*기본: 정적인*/
+            position: absolute; /*절대적인*/
+
+            bottom: 0px;
+            left:0px;
+        }
+        .visual{
+            position: relative; /*r관계형*/
+            /* 자식이 absolute일 경우 relative 인 부모가 위치 설정의 기준이 됨*/
+        }
+        .visual img{
+            display: inline; /*표시방식 : 인라인형*/
+            display: block; /*표시방식 : 블록형*/
+        }
+        .card{
+            background-color: white;
+            color: black;
+            border-right: solid 1px gray;
+            border-bottom: solid 1px gray;
+            
+
+            width: 310px; 
+            height: auto;
+            float: left;
+            list-style: none;
+            margin: 15px;
+        }
+        .info{
+            padding: 20px;
+        }
+        .info dd{
+            margin: 0px;
+            font-size: 9px; /*상속*/
+        }
+        .long_line{
+            border: solid 1px gray;
+            width: 90px;
+            margin: 10px 0px; /*상하좌우*/ 
+        }
+        .info dt{
+            font-weight: bold;
+        }
+        .info dl{
+            margin: 0px;
+        }
+        #content ul{
+            padding: 0px;
+        }
+        body{
+            background-color: gray;
+            margin: 0px;
+            color: white;
+        }
+        #wrap{
+            min-width: 1100px;
+            max-width: 1920px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .float_right{
+            float: right;
+            
+        }
+        .float_left{
+            float: left;
+            margin: 20px 130px;
+        }
+        .clear{
+            clear:both; 
+            height: 0; 
+            overflow: hidden;
+        }
+        nav>ul>li{
+            float: left;
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        header
+        {
+            width: 1000px;
+            height: 100px;
+        }
+        nav{
+            background-color: black;
+            width:100%;
+            left: 0px;
+            position: fixed;
+            z-index: 10;
+        }
+        nav>ul{
+            margin: 40px 130px;
+        }
+        #main_visual{
+                background-image: url("images/exem/main_visual.jpg");
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                height: 680px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 30px 50px;
+        }
+        footer>div>ul>li{
+            float: left;
+            list-style: none;
+            padding: 0px 10px; 
+            border-right: solid 2px white;
+        }
+        footer>div>ul>li:nth-child(6){
+            border: none;
+        }
+        footer>div>ul{
+            padding: 0px;
+        }
+        footer>ul>li{
+            float: left;
+            list-style: none;
+            padding: 0px 10px;
+        }
+        footer>ul{
+            padding:0px
+        }
+        #footer_left{
+            float: left;
+        }
+        #footer_right{
+            float: right;
+        }
+        section{
+            padding: 15px 50px;
+            text-align: center;
+        }
+        #about_list>li{
+                float: left;
+                list-style: none;
+                width: 200px; /*고정값*/
+                width: calc(25% - (1px / 4 * 3 ) - 50px - 50px ); /*유동적*/
+                border-right:solid 1px white;
+                padding: 30px;
+                font-size: 12px;
+        }
+        section>#about_list> li:nth-child(4){
+                border: none;
+        }
+        section h3{
+                font-size: 25px;
+                font-weight: bold;
+                margin: 50px 0px;
+        }
+        section dd{
+            margin: 0px;
+        }
+        a {
+            color: white;
+        }
+        </style>
     </head>
     <body>
-        <a href="training.html">HTML연습</a>
-        <a href="html_part1.html">PART.1</a>
-        <a href="html5.html">html5</a>
-        <a href="form.html">form</a>
-        <a href="exam.html">직무수행능력평가</a>
+        <div id="wrap">
+            <header>
+                <nav>
+                <a href=free_seo.html><h1 class="float_left"><img src="images/exem/header_logo.jpg" width="250px"/></h1></a>
+                    <ul class="float_right">
+                        <a href="index.html"><li>Index</li></a>
+                        <a href="layout1_exem.html"><li>layout1</li></a>
+                        <a href="layout1_exem copy 3.html"><li>layout2</li></a>
+                        <a href="layout1_exem copy 2.html"><li>layout3</li></a>
+                        <a href="free_seo.html"><li>free</li></a>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+            </header>
+            <section>
+                    <h3>index</h3>
+                    <a href="free_exem.html">
+                    <li class="card">
+                    <div class="visual"> 
+                        <img src="images/exem/recipe_5.jpg" width="311px"/>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>자유주제(칵테일)</dt>
+                            <dd>
+                            자유주제로 들어가기
+                            </dd>
+                        </dl>
+                    </div>
+                </li></a>
+
+                <a href="layout1_exem_.html">
+                <li class="card">
+                    <div class="visual"> 
+                        <img src="images/exem/recipe_6.jpg" width="311px"/>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>레이아웃1</dt>
+                            <dd>
+                             레이아웃1으로 들어가기
+                            </dd>
+                        </dl>
+                    </div>
+                </li></a>
+
+                <a href="layout2_exem__.html">
+                <li class="card">
+                        <div class="visual"> 
+                            <img src="images/exem/recipe_3.jpg" width="311px"/>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>레이아웃2</dt>
+                                <dd>
+                                  레이아웃2로 들어가기
+                                </dd>
+                            </dl>
+                        </div>
+                    </li></a>
+
+                <a href="layout3_exem_.html">
+                <li class="card">
+                        <div class="visual"> 
+                            <img src="images/exem/recipe_7.jpg" width="311px"/>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>레이아웃3</dt>
+                                <dd>
+                                    레이아웃3로 들어가기
+                                </dd>
+                            </dl>
+                        </div>
+                    </li></a>
+                    <div class="clear"></div>
+                 </section>
+                 
+                <footer>
+                <div id="footer_left">
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2019 Seojeongbin. All Right Reserved.</div>
+
+                </div>
+                <ul id="footer_right">
+                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+                </div>
+            </footer>
+        </div>
     </body>
- </html>
-
-
-
-
-
-<a href="https://www.naver.com" target="_blank">네이버가기</a>
-<br />
+</html>
