@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>칵테일</title>
+        <meta charset="utf-8"/>
+        <style>
+            body{
+                background-color: darkslategrey;
+                margin: 0px;
+                color: white;
+            }
+            #wrap{
+                min-width: 1100px;
+                max-width: 1920px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .float_right{
+                float: right;
+                
+            }
+            .float_left{
+                float: left;
+                margin: 20px 130px;
+            }
+            .clear{
+                clear:both; 
+                height: 0; 
+                overflow: hidden;
+            }
+            nav>ul>li{
+                float: left;
+                list-style: none;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            header
+            {
+                width: 1000px;
+                height: 100px;
+            }
+            nav{
+                background-color: black;
+                width:100%;
+                left: 0px;
+                position: fixed;
+            }
+            nav>ul{
+                margin: 40px 130px;
+            }
+            #main_visual{
+                background-image: url("images/exem/main_visual.jpg");
+                background-size: cover; 
+                background-repeat: no-repeat;
+                background-color: black;
+                background-position: 50% 50%;
+                padding: 335px;
+            }
+            footer{
+                background-color: black;
+                color: white;
+                padding: 30px 50px;
+            }
+            footer>div>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px; 
+                border-right: solid 2px white;
+            }
+            footer>div>ul>li:nth-child(6){
+                border: none;
+            }
+            footer>div>ul{
+                padding: 0px;
+            }
+            footer>ul>li{
+                float: left;
+                list-style: none;
+                padding: 0px 10px;
+            }
+            footer>ul{
+                padding:0px
+            }
+            #footer_left{
+                float: left;
+            }
+            #footer_right{
+                float: right;
+            }
+        
+            .visual img{
+            display: block;
+            }
+            .card{
+            background-color: white;
+            color: black;
+            border-right: solid 1px gray;
+            border-bottom: solid 1px gray;
+
+            width: 310px;
+            float: left;
+            list-style: none;
+            margin: 15px;
+        }
+            .info dd{
+                margin: 0px;
+                font-size: 9px; /*상속*/
+            }
+            .long_line{
+                border: solid 1px gray;
+                width: 90px;
+                margin: 10px 0px; /*상하좌우*/ 
+            }
+            .info dt{
+                font-weight: bold;
+            }
+            .info dl{
+                margin: 0px;
+            }
+            #content ul{
+                padding: 0px;
+            }
+            .clear{
+            clear: both;
+            height: 0px;
+            overflow: hidden;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <nav>
+                <a href=free.html><h1 class="float_left"><img src="images/exem/header_logo.jpg" width="250px"/></h1></a>
+                    <ul class="float_right">
+                        <li>Index</li>
+                        <li>Layout1</li>
+                        <li>Layout2</li>
+                        <li>Layout3</li>
+                        <li>Free</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+            </header>
+            <div id="main_visual"></div>
+            <section>
+                <h3>Meaning and Origin</h3>
+                <dl>
+                    <dt>Meaning</dt>
+                    <dd>하나 또는 몇 종류의 양주에 과즙이나 감미제, 향료 등을 섞고 
+                        얼음을 넣어 혼합함. 또는 그렇게 만든 술.</dd>
+                </dl>
+                <dl>
+                        <dt>Origin</dt>
+                        <dd>dfdjfoejfojo</dd>
+                    </dl>
+            </section>
+
+            <section>
+                <h3>Kinds and recipes</h3>
+                <li class="card">
+                    <div class="visual"> 
+                        <img src="images/layout3_img2.jpg"/>
+                        <div class="category">photoshop design</div>
+                    </div>
+                    <div class="info">
+                        <dl>
+                            <dt>Dulux Colour Awards</dt>
+                            <dd>
+                                <div>12th October 2011</div>
+                                <div class="long_line"></div>
+                                <p>
+                                    A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
+                                    A collection of posters showing the famous colours of history, 
+                                    advertises you add your own colours to history.
+                                </p>
+                                <div class="long_line"></div>
+                                <div>Read On →</div>
+                            </dd>
+                        </dl>
+                    </div>
+                </li>
+            </section>
+
+            <section>
+                    <h3>Kinds and recipes</h3>
+                    <li class="card">
+                        <div class="visual"> 
+                            <img src="images/layout3_img2.jpg"/>
+                            <div class="category">photoshop design</div>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>Dulux Colour Awards</dt>
+                                <dd>
+                                    <div>12th October 2011</div>
+                                    <div class="long_line"></div>
+                                    <p>
+                                        A direct mail kit that announces the Dulux Colour Awards Competition has commenced. 
+                                        A collection of posters showing the famous colours of history, 
+                                        advertises you add your own colours to history.
+                                    </p>
+                                    <div class="long_line"></div>
+                                    <div>Read On →</div>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+                </section>
+            
+            <footer>
+                <div id="footer_left">
+                    <ul>
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Service</li>
+                        <li>Work</li>
+                        <li>Blog</li>
+                        <li>Contact us</li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div>ⓒ 2019 Seojeongbin. All Right Reserved.</div>
+                    <div>the loges in the design are the property 
+                         of their respective owners/copyright 
+                         holders.
+                    </div>
+                </div>
+                <ul id="footer_right">
+                    <li><img src="images/layout1_footer_icon1.png"/></li>
+                    <li><img src="images/layout1_footer_icon2.png"/></li>
+                    <li><img src="images/layout1_footer_icon3.png"/></li>
+                    <li><img src="images/layout1_footer_icon4.png"/></li>
+                    <li><img src="images/layout1_footer_icon5.png"/></li>
+                    <li><img src="images/layout1_footer_icon6.png"/></li>
+                    <div class="clear"></div>
+                </ul>
+                <div class="clear"></div>
+                </div>
+            </footer>
+
+        </div>
+    </body>
+</html>

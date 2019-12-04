@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>칵테일 자유 페이지</title>
+        <meta charset="utf-8"/>
+        <style>
+        body{
+            background-color: black;
+            
+        }
+        .short_line{
+            border: solid 1px gray;
+            width: 30px;
+            margin: 10px;
+        }
+        header ul{
+            padding: 0px;
+        }
+        header li{
+            float:left;
+            list-style: none;
+            padding: 0px 20px 0px 0px ; /*상 우 하 좌 순서로 진행*/
+        
+        }
+        .clear{
+            clear: both;
+            height: 0px;
+            overflow: hidden;
+        }
+        .category{
+            background-color: black;
+            color:white;
+            display: inline-block;
+            padding: 2px 5px 5px 5px;
+            position: static; /*기본: 정적인*/
+            position: absolute; /*절대적인*/
+
+            bottom: 0px;
+            left:0px;
+        }
+        .visual{
+            position: relative; /*r관계형*/
+            /* 자식이 absolute일 경우 relative 인 부모가 위치 설정의 기준이 됨*/
+        }
+        .visual img{
+            display: inline; /*표시방식 : 인라인형*/
+            display: block; /*표시방식 : 블록형*/
+        }
+        .card{
+            background-color: white;
+            color: black;
+            border-right: solid 1px gray;
+            border-bottom: solid 1px gray;
+            
+
+            width: 310px; 
+            height: auto;
+            float: left;
+            list-style: none;
+            margin: 15px;
+        }
+        .info{
+            padding: 20px;
+        }
+        .info dd{
+            margin: 0px;
+            font-size: 9px; /*상속*/
+        }
+        .long_line{
+            border: solid 1px gray;
+            width: 90px;
+            margin: 10px 0px; /*상하좌우*/ 
+        }
+        .info dt{
+            font-weight: bold;
+        }
+        .info dl{
+            margin: 0px;
+        }
+        #content ul{
+            padding: 0px;
+        }
+        body{
+            background-color: gray;
+            margin: 0px;
+            color: white;
+        }
+        #wrap{
+            min-width: 1100px;
+            max-width: 1920px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .float_right{
+            float: right;
+            
+        }
+        .float_left{
+            float: left;
+            margin: 20px 130px;
+        }
+        .clear{
+            clear:both; 
+            height: 0; 
+            overflow: hidden;
+        }
+        nav>ul>li{
+            float: left;
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        header
+        {
+            width: 1000px;
+            height: 100px;
+        }
+        nav{
+            background-color: black;
+            width:100%;
+            left: 0px;
+            position: fixed;
+            z-index: 10;
+        }
+        nav>ul{
+            margin: 40px 130px;
+        }
+        #main_visual{
+                background-image: url("images/exem/main_visual.jpg");
+                background-size: auto 100%;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+                height: 680px;
+        }
+        footer{
+            background-color: black;
+            color: white;
+            padding: 30px 50px;
+        }
+        footer>div>ul>li{
+            float: left;
+            list-style: none;
+            padding: 0px 10px; 
+            border-right: solid 2px white;
+        }
+        footer>div>ul>li:nth-child(6){
+            border: none;
+        }
+        footer>div>ul{
+            padding: 0px;
+        }
+        footer>ul>li{
+            float: left;
+            list-style: none;
+            padding: 0px 10px;
+        }
+        footer>ul{
+            padding:0px
+        }
+        #footer_left{
+            float: left;
+        }
+        #footer_right{
+            float: right;
+        }
+        section{
+            padding: 15px 50px;
+            text-align: center;
+        }
+        #about_list>li{
+                float: left;
+                list-style: none;
+                width: 200px; /*고정값*/
+                width: calc(25% - (1px / 4 * 3 ) - 50px - 50px ); /*유동적*/
+                border-right:solid 1px white;
+                padding: 30px;
+                font-size: 12px;
+        }
+        section>#about_list> li:nth-child(4){
+                border: none;
+        }
+        section h3{
+                font-size: 25px;
+                font-weight: bold;
+                margin: 50px 0px;
+        }
+        section dd{
+            margin: 0px;
+        }
+        a {
+            color: white;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <header>
+                <nav>
+                <a href="free_exem.html"><h1 class="float_left"><img src="images/exem/header_logo.jpg" width="250px"/></h1></a>
+                    <ul class="float_right">
+                        <a href="index_exem.html"><li>Index</li></a>
+                        <a href="layout1_exem_.html"><li>layout1</li></a>
+                        <a href="layout2_exem__.html"><li>layout2</li></a>
+                        <a href="layout3_exem_.html"><li>layout3</li></a>
+                        <a href="free_exem.html"><li>free</li></a>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="main_visual"></div>
+
+                    <section>
+                            <h3>Origin</h3>
+
+                            <ul id="about_list">
+                                <li>
+                                    <dl>
+                                        <dt>칵테일의 유래</dt>
+                                        <dd>미국 독립전쟁 당시 혼합음료에 수탉의 꼬리가 있는 것을 보고 
+                                            병사가 멋있군(cock's tail)이라는
+                                            말을 한 것에서 유래되었다고 한다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>스크류 드라이버의 유래</dt>
+                                        <dd>보드카를 오렌지 주스 통에
+                                            넣어서 드라이버로 저어 마셨다 해서
+                                            붙여진 이름이다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>블랙러시안</dt>
+                                        <dd>
+                                            블랙러시안이라는 이름은 공산당의 종주국인
+                                            러시아가 빨강에 대항하는 의미로 붙여진 것이다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <li>
+                                    <dl>
+                                        <dt>롱 아일랜드 아이스티</dt>
+                                        <dd>미국의 유명한 휴양지를 연상하게 되어 
+                                            시원한 감을 주며 색이 아이스티와 같다하여 붙여진 이름이다.
+                                        </dd>
+                                    </dl>
+                                </li>
+                                <div class="clear"></div>
+                            </ul>
+                        </section>
+
+                    <section>
+                        <h3>칵테일 레시피 알아보기</h3>
+                    <li class="card">
+                        <div class="visual"> 
+                            <img src="images/exem/recipe_1.jpg" width="311px"/>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>보드카 토닉만들기</dt>
+                                <dd>
+                                    <div>재료 : 보드카, 진저에일, 레몬, 자몽, 로즈메리</div>
+                                    <p>
+                                    <li>1. 샷잔 두 개 분량의 보드카를 붓는다.</li>
+                                    <li>2. 레몬 반 개 분량을 즙을 내어 넣는다.</li>
+                                    <li>3. 진저에일을 부은 뒤, 로즈메리로 마무리</li>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="visual"> 
+                            <img src="images/exem/recipe_2.jpg" width="311px"/>
+                        </div>
+                        <div class="info">
+                            <dl>
+                                <dt>모히또만들기</dt>
+                                <dd>
+                                    <div>재료 : 민트잎, 라임, 설탕, 화이트럼, 탄산수</div>
+                                    <p>
+                                    <li>1. 컵에 설탕을 1t정도의 양을 넣어줍니다.</li>
+                                    <li>2. 민트와 설탕, 라임 즙이 잘 어우러지도록 누르며 만들어 줍니다.</li>
+                                    <li>3. 얼음과 화이트 럼을 넣어주고 탄산수를 적당량 채워줍니다.</li>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                            <div class="visual"> 
+                                <img src="images/exem/recipe_3.jpg" width="311px"/>
+                            </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>에그녹만들기</dt>
+                                    <dd>
+                                        <div>재료 : 럼, 계란, 우유, 생크림, 시나몬, 넛맥가루, 바닐라 익스트랙</div>
+                                        <p>
+                                        <li>1. 계란 노른자 5개와 설탕 1/3을 잘 섞습니다.</li>
+                                        <li>2. 우유 400ml, 시나몬, 넛맥, 바닐라 1t를 넣고 중탕해줍니다.</li>
+                                        <li>3. 불을 끈 뒤 생크림 3/4컵, 럼1컵을 넣고 잘 섞어줍니다.</li>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                    <li class="card">
+                            <div class="visual"> 
+                                <img src="images/exem/recipe_4.jpg" width="311px"/>
+                            </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>클래식 핫 토디만들기</dt>
+                                    <dd>
+                                        <div>재료 : 꿀, 레몬주스, 잭다니엘</div>
+                                        <p>
+                                        <li>1. 소스팬에 물을 넣고 끓여줍니다.</li>
+                                        <li>2. 끓인 물에 꿀을 원하는 만큼 넣고 레몬주스 2t를 넣습니다.</li>
+                                        <li>3. 위스키(잭다니엘)과 함께 넣고 섞어줍니다.</li>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                    <li class="card">
+                            <div class="visual"> 
+                                <img src="images/exem/recipe_5.jpg" width="311px"/>
+                            </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>모스카우 뮬만들기</dt>
+                                    <dd>
+                                        <div>재료 : 진저에일, 라임/레몬주스, 보드카</div>
+                                        <p>
+                                        <li>1. 라임 주스 약간과 보드카를 섞어줍니다.</li>
+                                        <li>2. 컵에 얼음을 넣고 나머지를 진저에일로 채워줍니다.</li>
+                                        <li>3. 가니쉬로 라임 한 쪽이나 민트잎을 더 해줍니다.</li>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                    <li class="card">
+                            <div class="visual"> 
+                                <img src="images/exem/recipe_6.jpg" width="311px"/>
+                            </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>로제타만들기</dt>
+                                    <dd>
+                                        <div>재료 : 생제르맹, 로제샴페인, 미니장미</div>
+                                        <p>
+                                        <li>1. 샴페인잔에 장미한송이를 넣어줍니다.</li>
+                                        <li>2. 컵에 엘더플라워 향이 가득한 생제르맹과 로제샴페인을 1:3비율로 따라줍니다.</li>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                    <li class="card">
+                            <div class="visual"> 
+                                <img src="images/exem/recipe_7.jpg" width="311px"/>
+                            </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>애플민트 하이볼만들기</dt>
+                                    <dd>
+                                        <div>재료 : 설탕, 애플민트, 탄산수, 레몬즙, 위스키</div>
+                                        <p>
+                                        <li>1. 애플민트를 뜯어서 컵이나 그릇에 담아줍니다.</li>
+                                        <li>2. 설탕을 넣어 녹여준 뒤, 레몬즙을 붓고 고르게 섞어줍니다.</li>
+                                        <li>3. 설탕이 녹으면 컵에 담고 탄산수, 위스키 순으로 부어줍니다.</li>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+
+                    <li class="card">
+                            <div class="visual"> 
+                                <img src="images/exem/recipe_8.jpg" width="311px"/>
+                            </div>
+                            <div class="info">
+                                <dl>
+                                    <dt>물랑루즈만들기</dt>
+                                    <dd>
+                                        <div>재료 : 라즈베리, 라임, 생제르맹, 바닐라에센스, 허브</div>
+                                        <p>
+                                        <li>1. 글라스에 라즈베리, 라임즙을 넣어줍니다.</li>
+                                        <li>2. 생제르맹과 호세를 넣고 얼음을 반정도 채워줍니다.</li>
+                                        <li>3. 잘 저어준 뒤 바닐라 에센스를 뿌리고 얼음을 가득채웁니다.</li>
+                                        </p>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </li>
+                    <div class="clear"></div>
+                </ul>
+            </div>
+            </section>
+            <section>
+                <h3>칵테일 만드는 영상 알아보기</h3>
+                <video width="95%" controls>
+                <source src="./images/exem/romance.mp4" type="video/mp4" />
+                    
+             </section>
+
+
+            <footer>
+                    <div id="footer_left">
+                        <ul>
+                            <li>About</li>
+                            <li>Blog</li>
+                            <li>Contact us</li>
+                            <div class="clear"></div>
+                        </ul>
+                        <div>ⓒ 2019 Seojeongbin. All Right Reserved.</div>
+
+                    </div>
+                    <ul id="footer_right">
+                        <li><img src="images/layout1_footer_icon1.png"/></li>
+                        <li><img src="images/layout1_footer_icon3.png"/></li>
+                        <li><img src="images/layout1_footer_icon6.png"/></li>
+                        <div class="clear"></div>
+                    </ul>
+                    <div class="clear"></div>
+                    </div>
+                </footer>
+
+
+                
+        </div>
+    </body>
+</html>
