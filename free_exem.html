@@ -19,7 +19,7 @@
         header li{
             float:left;
             list-style: none;
-            padding: 0px 20px 0px 0px ; /*상 우 하 좌 순서로 진행*/
+            padding: 0px 20px 0px 0px ;
         
         }
         .clear{
@@ -32,19 +32,18 @@
             color:white;
             display: inline-block;
             padding: 2px 5px 5px 5px;
-            position: static; /*기본: 정적인*/
-            position: absolute; /*절대적인*/
+            position: static; 
+            position: absolute; 
 
             bottom: 0px;
             left:0px;
         }
         .visual{
-            position: relative; /*r관계형*/
-            /* 자식이 absolute일 경우 relative 인 부모가 위치 설정의 기준이 됨*/
+            position: relative; 
         }
         .visual img{
-            display: inline; /*표시방식 : 인라인형*/
-            display: block; /*표시방식 : 블록형*/
+            display: inline; 
+            display: block; 
         }
         .card{
             background-color: white;
@@ -64,12 +63,12 @@
         }
         .info dd{
             margin: 0px;
-            font-size: 9px; /*상속*/
+            font-size: 9px;
         }
         .long_line{
             border: solid 1px gray;
             width: 90px;
-            margin: 10px 0px; /*상하좌우*/ 
+            margin: 10px 0px;
         }
         .info dt{
             font-weight: bold;
@@ -171,8 +170,8 @@
         #about_list>li{
                 float: left;
                 list-style: none;
-                width: 200px; /*고정값*/
-                width: calc(25% - (1px / 4 * 3 ) - 50px - 50px ); /*유동적*/
+                width: 200px;
+                width: calc(25% - (1px / 4 * 3 ) - 50px - 50px );
                 border-right:solid 1px white;
                 padding: 30px;
                 font-size: 12px;
@@ -198,21 +197,21 @@
             <header>
                 <nav>
                 <a href="free_exem.html"><h1 class="float_left"><img src="images/exem/header_logo.jpg" width="250px"/></h1></a>
-                    <ul class="float_right">
-                        <a href="index_exem.html"><li>Index</li></a>
-                        <a href="layout1_exem_.html"><li>layout1</li></a>
-                        <a href="layout2_exem__.html"><li>layout2</li></a>
-                        <a href="layout3_exem_.html"><li>layout3</li></a>
-                        <a href="free_exem.html"><li>free</li></a>
-                        <div class="clear"></div>
-                    </ul>
+                <ul class="float_right">
+                    <a href="index.html"><li>Index</li></a>
+                    <a href="layout1_exem_.html"><li>layout1</li></a>
+                    <a href="layout2_exem__.html"><li>layout2</li></a>
+                    <a href="layout3_exem_.html"><li>layout3</li></a>
+                    <a href="free_exem.html"><li>free</li></a>
+                    <div class="clear"></div>
+                </ul>
                 </nav>
             </header>
 
             <div id="main_visual"></div>
 
                     <section>
-                            <h3>Origin</h3>
+                            <h3>칵테일 이름에 대한 유래</h3>
 
                             <ul id="about_list">
                                 <li>
@@ -407,17 +406,12 @@
                             </div>
                         </li>
                     <div class="clear"></div>
-                </ul>
-            </div>
             </section>
             <section>
                 <h3>칵테일 만드는 영상 알아보기</h3>
                 <video width="95%" controls>
-                <source src="./images/exem/romance.mp4" type="video/mp4" />
-                    
-             </section>
-
-
+                    <source src="./media/Blue Romance.mp4" type="video/mp4"/></video>
+            </section>
             <footer>
                     <div id="footer_left">
                         <ul>
@@ -427,7 +421,6 @@
                             <div class="clear"></div>
                         </ul>
                         <div>ⓒ 2019 Seojeongbin. All Right Reserved.</div>
-
                     </div>
                     <ul id="footer_right">
                         <li><img src="images/layout1_footer_icon1.png"/></li>
@@ -436,11 +429,7 @@
                         <div class="clear"></div>
                     </ul>
                     <div class="clear"></div>
-                    </div>
-                </footer>
-
-
-                
+                </footer>   
         </div>
     </body>
 </html>

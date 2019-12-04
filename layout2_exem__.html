@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>레이아웃2번</title>
         <meta charset="utf-8"/>
         <style>
         body{
             background-color: black;
-            
         }
         .short_line{
             border: solid 1px gray;
@@ -19,8 +18,7 @@
         .nav_name{
             float:left;
             list-style: none;
-            padding: 0px 20px 0px 0px ; /*상 우 하 좌 순서로 진행*/
-        
+            padding: 0px 20px 0px 0px ;
         }
         #header_body{
             background-color: gray;
@@ -46,7 +44,6 @@
             height: 0; 
             overflow: hidden;
         }
-
         #header1
         {
             width: 1000px;
@@ -107,7 +104,6 @@
             section>header>h1>span:nth-child(2){
                 color: #cfc91d;
             }
-            /*중간내용 생략시 >아니고 띄어쓰기*/
             section>header>nav li{
                 float: left;
                 list-style: none;
@@ -121,6 +117,14 @@
             .float_left{
                 float: left;
             }
+            #float_left2{
+                float: left;
+                margin: 5px;
+            }
+            #float_right2{
+                float: right;
+                margin: 5px;
+            }
             .float_right{
                 float: right;
             }   
@@ -133,21 +137,19 @@
             #main_visual{
                 background-image: url("images/layout2_visual.jpg");
                 background-size: 100% auto;
-                background-size: cover; /*다 덮는 대부분 이걸 쓰지만 상황에 따라 다름*/
+                background-size: cover;
                 background-repeat: no-repeat;
-                /*repeat, no repeat, repeat-x, repeat-y*/
                 background-color: black;
-                background-position: 50% 50%; /*가로 세로*/
+                background-position: 50% 50%;
 
-                color: white; /*상속*/
+                color: white;
                 text-align: center;
                 padding: 150px 0px;
-                
             }
             #main_visual h2{
                 letter-spacing: 15px;
                 font-size: 50px;
-                margin: 10px 0px; /*상하 좌우*/
+                margin: 10px 0px;
             }
             #title_top{
                 font-size: 20px;
@@ -173,8 +175,8 @@
             section>#about_list>li{
                 float: left;
                 list-style: none;
-                width: 200px; /*고정값*/
-                width: calc(25% - (1px / 4 * 3 ) - 30px - 30px ); /*유동적*/
+                width: 200px;
+                width: calc(25% - (1px / 4 * 3 ) - 30px - 30px );
                 border-right:solid 1px gray;
                 padding: 30px;
             }
@@ -194,9 +196,8 @@
                 width: 25%;
             }
             #work_list img{
-                width:100%; /*있을 수 있는 100% 기준*/
-                display: inline; /*원래 이미지의 출력방식, 이것은 무시당함 */
-                display: block; /*블록형으로 변경*/
+                width:100%; 
+                display: block; 
             }
             #work_list{
                 padding:0px;
@@ -212,29 +213,32 @@
                 background: white;
                 color: black;
             }
+            section header h1{
+                margin: 0px;
+            }
         </style>
     </head>
     <body id="header_body">
         <div id="wrap">
             <header id="header1">
                 <nav id="nav1">
-                <a href=free_seo.html><h1 class="float_left"><img src="images/exem/header_logo.jpg" width="250px"/></h1></a>
-                    <ul class="float_right" id="ul_padding">
-                        <a href="index.html"><li>Index</li></a>
-                        <a href="layout1_exem.html"><li>layout1</li></a>
-                        <a href="layout1_exem copy 3.html"><li>layout2</li></a>
-                        <a href="layout1_exem copy 2.html"><li>layout3</li></a>
-                        <a href="free_seo.html"><li>free</li></a>
+                <a href="free_exem.html"><h1 class="float_left"><img src="images/exem/header_logo.jpg" width="250px"/></h1></a>
+                    <ul class="float_right">
+                        <a href="index.html"><li class="nav_name">Index</li></a>
+                        <a href="layout1_exem_.html"><li class="nav_name">layout1</li></a>
+                        <a href="layout2_exem__.html"><li class="nav_name">layout2</li></a>
+                        <a href="layout3_exem_.html"><li class="nav_name">layout3</li></a>
+                        <a href="free_exem.html"><li class="nav_name">free</li></a>
                         <div class="clear"></div>
                     </ul>
                 </nav>
             </header>
                     <section>
                             <header>
-                                    <h1 class="float_left"> <!-- div span -->
+                                    <h1 id="float_left2">
                                         <span>MY</span><span>POLIO</span>
                                     </h1>
-                                    <nav class="float_right">
+                                    <nav id="float_right2">
                                         <ul>
                                             <li>HOME</li>
                                             <li>ABOUT ME</li>
